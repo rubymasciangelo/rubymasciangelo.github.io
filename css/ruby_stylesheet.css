@@ -156,3 +156,31 @@ section {
     position: relative;
     transform: translate(-50%,-50%)
 }
+
+/*========================================================================
+                                 NAVBAR
+=======================================================================*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #003333; 
+}
+
+.navbar a {
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: #12552e;
+    color: azure;
+}
