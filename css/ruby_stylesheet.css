@@ -55,7 +55,7 @@ h4 {
 p {
 	font-weight: 300;
 	line-height: 30px;
-	padding-bottom: 15px;
+	padding-top: 15px;
 }
 
 .text-center {
@@ -72,8 +72,8 @@ section {
 }
 
 .navbar {
-	height: 150px;
-	max-height: 340px;
+	height: 50px;
+	max-height: 50px;
 	display: block;
 }
 
@@ -114,9 +114,10 @@ section {
 	text-align: center;
 }
 
-.menu-container {
-	max-height: 340px;
-	margin: 0% auto;
+.navbar-container {
+	max-height: 40px;
+    margin: 0% auto;
+    margin-top: 0px;
 	content: " ";
 	width: 100%;
 	position: fixed;
@@ -132,18 +133,23 @@ section {
     .firstname,
     .lastname {
         font-size: 90px;
+        display: block;
     }
 }
 
 @media screen and (max-width: 600px) {
     .firstname {
         font-size: 50px;
-        padding-top: 60px;
+        padding-top: 50%;
+        padding-left: 50%;
+        display: block;
 
     }
     .lastname {
         font-size: 40px;
-        padding-top: 110px;
+        padding-top: 60%;
+        padding-left: 60%;
+        display: block;
     }
 }
 
@@ -154,7 +160,8 @@ section {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-variant: small-caps;
     position: relative;
-    transform: translate(-50%,-50%)
+    transform: translate(-50%,-50%);
+    display: block;
 }
 
 /*========================================================================
@@ -168,7 +175,7 @@ section {
 
 .navbar a {
     float: left;
-    color: whitesmoke;
+    color: #99ffcc;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -176,11 +183,6 @@ section {
 }
 
 .navbar a:hover {
-    background-color: aquamarine;
+    background-color: rgb(16, 243, 167);
     color: black;
-}
-
-.navbar a.active {
-    background-color: #12552e;
-    color: azure;
 }
