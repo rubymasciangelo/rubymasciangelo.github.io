@@ -253,7 +253,7 @@ section {
     font-size: 17px;
 }
 
-.navbar a:hover {
-    background-color: rgb(16, 243, 167);
-    color: black;
-}
+    .navbar a:hover {
+        background-color: rgb(16, 243, 167);
+        color: #003333;
+    }
