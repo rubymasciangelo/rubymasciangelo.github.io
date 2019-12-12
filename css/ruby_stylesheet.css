@@ -258,6 +258,11 @@ div.description {
     EQUATION FOR RESPONSIVE WIDTH:
     100 - 0.3 (for the 3 images) -> 99.7 / 3 = 33.23333
     =======================================================================*/
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 33.23333%;
+    }
 
 }
 
