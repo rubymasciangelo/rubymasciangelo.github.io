@@ -198,6 +198,10 @@ div.gallery img {
     height:auto;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .responsive {
     width: 100%;
 }
