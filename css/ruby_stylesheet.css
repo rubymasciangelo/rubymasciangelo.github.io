@@ -193,6 +193,11 @@ div.description {
     text-align: center;
 }
 
+div.gallery img {
+    width: 100%;
+    height:auto;
+}
+
 .responsive {
     width: 100%;
 }
