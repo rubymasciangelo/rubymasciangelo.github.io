@@ -188,6 +188,10 @@ section {
     padding-top: 0px;
 }
 
+div.description {
+    padding: 15px;
+    text-align: center;
+}
 
 /*========================================================================
                                 DESKTOP
