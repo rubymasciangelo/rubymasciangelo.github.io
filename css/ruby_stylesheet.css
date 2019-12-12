@@ -46,11 +46,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     line-height: 50px;
-	font-weight: 900;
+    font-weight: 900;
     font-size: 30px;
+    color: #99FFCC;
     border: 5px solid #003333;
     text-shadow: 0 0 3px #00ff80, 0 0 5px #003333;
     box-shadow: 0 0 3px #00ff80, 0 0 5px #003333;
+    background-color: #003333;
 }
 
 h3 {
