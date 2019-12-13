@@ -189,9 +189,9 @@ section {
 }
 
 div.gallery {
-    margin: 5px;
-    float: left;
-    width: 180px;
+    margin: 10px;
+    float: inherit;
+    width: 400px;
 }
 
 div.description {
@@ -211,6 +211,7 @@ div.gallery img {
 .responsive { /*seems excessive*/
     width: 100%;
 }
+
 
 /*========================================================================
                                 DESKTOP
