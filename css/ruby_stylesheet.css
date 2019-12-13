@@ -98,7 +98,7 @@ section {
 	margin-left: auto;
 }
 
-.container-fluid {
+.container-fluid { /*seems excessive*/
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-right: auto;
@@ -215,6 +215,7 @@ div.description {
 
 .responsive { /*seems excessive*/
     width: 100%;
+    padding-top: 10%;
 }
 
 
@@ -280,7 +281,7 @@ div.description {
     100 - 0.3 (for the 3 images) -> 99.7 / 3 = 33.23333
     =======================================================================*/
     .responsive {
-        padding: 0 6px;
+        padding: 10% 6px 0;
         float: left;
         width: 33.23333%;
     }
