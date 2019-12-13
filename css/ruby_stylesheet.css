@@ -196,7 +196,7 @@ div.description {
 }
 
 
-.library, .spiders {
+.library, .spiders, .mail, .github, .linkdin {
     width: 50%;
     display: block;
     margin-left: auto;
