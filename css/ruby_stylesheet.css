@@ -199,12 +199,19 @@ div.description {
     text-align: center;
 }
 
-div.gallery img {
+
+
+.library, .spiders {
     width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+.vroom {
+    width: 100%
+}
+
 
 * {
     box-sizing: border-box;
