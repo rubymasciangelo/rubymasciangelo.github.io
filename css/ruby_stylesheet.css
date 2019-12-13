@@ -188,17 +188,12 @@ section {
     padding-top: 0px;
 }
 
-div.gallery {
-    margin: 10px;
-    width: 400px;
 
-}
 
 div.description {
     padding: 15px;
     text-align: center;
 }
-
 
 
 .library, .spiders {
@@ -211,6 +206,7 @@ div.description {
 .vroom {
     width: 100%
 }
+
 
 
 * {
