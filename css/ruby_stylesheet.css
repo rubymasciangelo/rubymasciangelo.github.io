@@ -188,6 +188,12 @@ section {
     padding-top: 0px;
 }
 
+div.gallery {
+    margin: 5px;
+    float: left;
+    width: 180px;
+}
+
 div.description {
     padding: 15px;
     text-align: center;
@@ -195,13 +201,14 @@ div.description {
 
 div.gallery img {
     width: 100%;
+    
 }
 
 * {
     box-sizing: border-box;
 }
 
-.responsive {
+.responsive { /*seems excessive*/
     width: 100%;
 }
 
