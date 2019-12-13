@@ -196,8 +196,15 @@ div.description {
 }
 
 
-.library, .spiders, .mail, .github, .linkdin {
+.library, .spiders, .github, .linkdin {
     width: 50%;
+}
+
+.mail {
+    width: 75%;
+}
+
+.library, .spiders, .github, .linkdin, .mail {
     display: block;
     margin-left: auto;
     margin-right: auto;
