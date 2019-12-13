@@ -190,8 +190,8 @@ section {
 
 div.gallery {
     margin: 10px;
-    float: inherit;
     width: 400px;
+
 }
 
 div.description {
@@ -200,8 +200,10 @@ div.description {
 }
 
 div.gallery img {
-    width: 100%;
-    
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 * {
