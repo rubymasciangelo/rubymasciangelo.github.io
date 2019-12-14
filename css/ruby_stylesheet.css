@@ -273,6 +273,16 @@ div.description {
         padding: 0 23%;
     }
 
+    h1 {
+        text-transform: uppercase;
+        text-align: left; 
+        line-height: 50px;
+        font-weight: 900;
+        font-size: 50px;
+        color: #003333;
+        text-shadow: 0 0 3px #00ff80, 0 0 5px #003333;
+    }
+
     #aboutme {
         padding-bottom: 220px;
     }
