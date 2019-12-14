@@ -123,16 +123,14 @@ p {
     color: #003333;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-variant: small-caps;
-    position: relative;
-    transform: translate(-50%,-50%);
     display: block;
 }
 
 
     .firstname {
         font-size: 70px;
-        padding-top: 40%;
-        padding-left: 45%;
+        padding-top: 20%;
+        padding-left: 20px;
         padding-bottom: 0px;
         display: block;
         height: 5px;
@@ -140,8 +138,8 @@ p {
     }
     .lastname {
         font-size: 50px;
-        padding-top: 0px;
-        padding-left: 56%;
+        padding-top: 30px;
+        padding-left: 20px;
         padding-bottom: 0px;
         display: block;
         height: 5px;
@@ -216,6 +214,15 @@ div.description {
                                 TABLET 500px - 699px maybe make this higher depending on icons
 =======================================================================*/
 @media screen and (min-width: 500px) {
+
+    /*.firstname {
+        padding-top: 15%;
+    }
+
+    .lastname {
+        padding-top: 5%;
+    }*/
+
     .container {
         padding: 5% 10%;
     }
@@ -249,9 +256,12 @@ div.description {
         font-weight: 900;
         display: block;
         padding-left: 10%;
+        padding-bottom: 0px;
         width: 5px;
         height: 10px;
         color: #99ffcc;
+        position: relative;
+        transform: translate(-50%,-50%);
     }
 
     .firstname {
@@ -261,6 +271,7 @@ div.description {
     .lastname {
         padding-top: 13%;
     }
+
 
     #home {
         background: url(../image/ruby.jpg) no-repeat 50% 100%;
