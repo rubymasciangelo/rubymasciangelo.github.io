@@ -9,6 +9,7 @@
     TURQUOISE:   #99FFCC
     NAV HOV: rgb(16, 243, 167) / #10F3A7
     SHADOWS: 0 0 3px #00ff80, 0 0 5px #003333;
+    LIGHTEST TURQUOISE: #bbfce0
 ========================================================*/
 @-ms-viewport {
     width: extend-to-zoom;
