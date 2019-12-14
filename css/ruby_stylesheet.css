@@ -48,9 +48,8 @@ h1 {
     font-size: 30px;
     color: #99FFCC;
     border: 5px solid #003333;
-    text-shadow: 0 0 3px #00ff80, 0 0 5px #003333;
-    box-shadow: 0 0 3px #00ff80, 0 0 5px #003333;
     background-color: #003333;
+    padding: 0;
 }
 
 p {
@@ -234,8 +233,6 @@ div.description {
         font-size: 50px;
         color: #003333;
         border: none;
-        text-shadow: none;
-        box-shadow: none;
         background-color: transparent;
     }
 }
@@ -294,8 +291,6 @@ div.description {
         font-size: 50px;
         color: #003333;
         border: none;
-        text-shadow: none;
-        box-shadow: none;
         background-color: transparent;
     }
 
