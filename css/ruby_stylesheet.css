@@ -225,6 +225,19 @@ div.description {
     .container {
         padding: 0 10%;
     }
+
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 50px;
+        font-weight: 900;
+        font-size: 50px;
+        color: #003333;
+        border: none;
+        text-shadow: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
 }
 
 
