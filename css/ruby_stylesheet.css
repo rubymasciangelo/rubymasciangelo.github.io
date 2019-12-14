@@ -164,13 +164,14 @@ div.description {
     text-align: center;
 }
 
-
 .library, .spiders, .github, .linkdin {
     width: 50%;
+    height: 50%;
 }
 
 .mail {
     width: 75%;
+    height: 75%;
 }
 
 .library, .spiders, .github, .linkdin, .mail {
@@ -180,7 +181,8 @@ div.description {
 }
 
 .vroom {
-    width: 100%
+    width: 100%;
+    height: 100%;
 }
 
 
