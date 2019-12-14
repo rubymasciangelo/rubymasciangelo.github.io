@@ -56,21 +56,6 @@ h1 {
     background-color: #003333;
 }
 
-h3 {
-    line-height: 30px;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    font-size: 20px;
-}
-
-h4 {
-	padding-top: 25px;
-	line-height: 20px;
-	padding-bottom: 0px;
-	font-size: 15px;
-	font-weight: 900;
-}
-
 p {
 	font-weight: 300;
 	line-height: 30px;
@@ -237,7 +222,7 @@ div.description {
 }
 
 /*========================================================================
-                                TABLET 500px - 699px
+                                TABLET 500px - 699px maybe make this higher depending on icons
 =======================================================================*/
 @media screen and (min-width: 500px) {
     .container {
