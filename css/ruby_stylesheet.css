@@ -279,12 +279,6 @@ div.description {
         padding-bottom: 500px; /* space after */
     }
 
-    h5 {
-        line-height: 30px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        font-size: 20px;
-    }
 
     #aboutme {
         padding-bottom: 220px;
@@ -297,7 +291,7 @@ div.description {
 
 
     /*========================================================================
-                                PROJECTS DESKTOP
+                                PROJECTS AND CONTACT GALLERIES DESKTOP
 
     EQUATION FOR RESPONSIVE WIDTH:
     100 - 0.3 (for the 3 images) -> 99.7 / 3 = 33.23333
