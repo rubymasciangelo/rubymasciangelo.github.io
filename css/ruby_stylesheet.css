@@ -275,12 +275,15 @@ div.description {
 
     h1 {
         text-transform: uppercase;
-        text-align: left; 
+        text-align: left;
         line-height: 50px;
         font-weight: 900;
         font-size: 50px;
         color: #003333;
-        text-shadow: 0 0 3px #00ff80, 0 0 5px #003333;
+        border: none;
+        text-shadow: none;
+        box-shadow: none;
+        background-color: transparent;
     }
 
     #aboutme {
