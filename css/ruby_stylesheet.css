@@ -292,6 +292,10 @@ div.description {
         height: 100%;
     }
 
+    .library, .spiders, .github, .linkdin, .mail, .vroom {
+        height: 100px;
+    }
+
 }
 
 
