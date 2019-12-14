@@ -174,15 +174,15 @@ div.description {
     height: 75%;
 }
 
-.library, .spiders, .github, .linkdin, .mail {
+.library, .spiders, .github, .linkdin, .mail, .vroom {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .vroom {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 
@@ -285,6 +285,11 @@ div.description {
         padding: 10% 6px 0;
         float: left;
         width: 33.23333%;
+    }
+
+    .vroom {
+        width: 100%;
+        height: 100%;
     }
 
 }
