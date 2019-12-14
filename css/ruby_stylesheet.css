@@ -49,13 +49,12 @@ h1 {
     color: #99FFCC;
     border: 5px solid #003333;
     background-color: #003333;
-    padding: 0;
 }
 
 p {
 	font-weight: 300;
 	line-height: 30px;
-	padding-top: 15px;
+	padding: 15px 5% 0;
 }
 
 .text-center {
@@ -73,19 +72,19 @@ section {
 	display: block;
 }
 
-.container {
+/*.container {
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-.container-fluid { /*seems excessive*/
+.container-fluid { 
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
-}
+}*/
 
 .row {
 	margin-right: -15px;
