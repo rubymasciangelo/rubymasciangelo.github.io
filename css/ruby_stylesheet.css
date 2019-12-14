@@ -256,6 +256,7 @@ div.description {
         font-weight: 900;
         display: block;
         padding-left: 10%;
+        padding-right: 0;
         padding-bottom: 0px;
         width: 5px;
         height: 10px;
