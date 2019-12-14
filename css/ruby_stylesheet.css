@@ -49,6 +49,7 @@ h1 {
     color: #99FFCC;
     border: 5px solid #003333;
     background-color: #003333;
+    margin: 0;
 }
 
 p {
@@ -61,10 +62,6 @@ p {
 	text-align: center;
 }
 
-section {
-	padding-top: 50px;
-	margin-top: 50px;
-}
 
 .navbar {
 	height: 50px;
