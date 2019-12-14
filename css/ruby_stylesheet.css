@@ -278,7 +278,13 @@ div.description {
         padding-top: 350px; /* space before main title logo */
         padding-bottom: 500px; /* space after */
     }
+    /*========================================================================
+                                DESKTOP GENERIC
+    =======================================================================*/
 
+    .container {
+        padding: 0 23%;
+    }
 
     #aboutme {
         padding-bottom: 220px;
