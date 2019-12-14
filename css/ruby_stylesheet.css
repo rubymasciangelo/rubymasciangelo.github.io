@@ -234,6 +234,10 @@ div.description {
         border: none;
         background-color: transparent;
     }
+
+    p {
+        padding: 0;
+    }
 }
 
 
