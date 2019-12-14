@@ -40,7 +40,7 @@ body {
 
 
 
-h1 {
+h1, h2 {
     text-transform: uppercase;
     text-align: center;
     line-height: 50px;
@@ -50,6 +50,13 @@ h1 {
     border: 5px solid #003333;
     background-color: #003333;
     margin: 0;
+}
+
+h2 {
+    text-transform: lowercase;
+    line-height: 10px;
+    font-size: 20px;
+    padding-bottom: 5px;
 }
 
 p {
