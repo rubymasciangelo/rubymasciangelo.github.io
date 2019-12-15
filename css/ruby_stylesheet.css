@@ -124,27 +124,22 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-variant: small-caps;
     display: block;
+    padding-bottom: 0px;
+    padding-left: 5%;
+    display: block;
+    height: 5px;
 }
 
 
     .firstname {
         font-size: 70px;
         padding-top: 50px;
-        padding-left: 5%;
         padding-right: 65%;
-        padding-bottom: 0px;
-        display: block;
-        height: 5px;
-
     }
     .lastname {
         font-size: 50px;
         padding-top: 60px;
-        padding-left: 5%;
         padding-right: 40%;
-        padding-bottom: 0px;
-        display: block;
-        height: 5px;
     }
 
     #home {
