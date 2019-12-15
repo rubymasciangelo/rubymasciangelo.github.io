@@ -80,10 +80,10 @@ p {
     padding-bottom: 10%;
 }
 
-.row {
+/*.row {   SEEMS EXTRA
 	margin-right: -15px;
 	margin-left: -15px;
-}
+}*/
 
 .clearfix:after,
 .container:after,
@@ -212,6 +212,31 @@ div.description {
 =======================================================================*/
 @media screen and (min-width: 500px) {
 
+    /*========================================================================
+                                 NAVBAR
+    =======================================================================*/
+    .navbar {
+        overflow: hidden;
+        background-color: #003333;
+    }
+
+    .navbar a {
+        float: left;
+        color: #99ffcc;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .navbar a:hover {
+        background-color: rgb(16, 243, 167);
+        color: #003333;
+    }
+
+    /*========================================================================
+                                 OTHER
+    =======================================================================*/
     .firstname {
         padding-top: 10%;
         padding-left: 10%;
@@ -241,6 +266,11 @@ div.description {
         padding: 0;
     }
 }
+
+
+
+
+
 
 
 /*========================================================================
@@ -313,27 +343,3 @@ div.description {
     }
 
 }
-
-
-/*========================================================================
-                                 NAVBAR
-=======================================================================*/
-
-.navbar {
-    overflow: hidden;
-    background-color: #003333; 
-}
-
-.navbar a {
-    float: left;
-    color: #99ffcc;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-    .navbar a:hover {
-        background-color: rgb(16, 243, 167);
-        color: #003333;
-    } 
