@@ -252,10 +252,8 @@ div.description {
     .lastname {
         font-size: 100px;
         font-weight: 900;
-        display: block;
         padding-left: 10%;
         padding-right: 0;
-        padding-bottom: 0px;
         width: 5px;
         height: 10px;
         color: #99ffcc;
@@ -265,10 +263,6 @@ div.description {
 
     .firstname {
         padding-top: 0%;
-    }
-
-    .lastname {
-        padding-top: 13%;
     }
 
 
