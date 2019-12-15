@@ -104,13 +104,13 @@ p {
     height: 45px;
     max-height: 50px;
     display: block;
+    padding-top: 10px;
 }
 
 .navbar a {
-    float: left;
     color: #99ffcc;
     text-align: center;
-    padding: 16px 10px;
+    padding: 16px 8px;
     text-decoration: none;
     font-size: 13px;
 }
