@@ -93,6 +93,28 @@ p {
 	content: " ";
 }
 
+/*========================================================================
+                                 NAVBAR
+    =======================================================================*/
+.navbar {
+    overflow: hidden;
+    background-color: #003333;
+}
+
+.navbar a {
+    float: left;
+    color: #99ffcc;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navbar a:hover {
+    background-color: rgb(16, 243, 167);
+    color: #003333;
+}
+
 .wrap {
 	height: 100%;
 	width: 100%;
