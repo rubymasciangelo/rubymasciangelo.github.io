@@ -38,6 +38,15 @@ body {
 	background-color: #99ffcc;
 }
 
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
 
 
 h1, h2 {
@@ -69,13 +78,6 @@ p {
 	text-align: center;
 }
 
-
-.navbar {
-	height: 50px;
-	max-height: 50px;
-	display: block;
-}
-
 .container {
     padding-bottom: 10%;
 }
@@ -99,13 +101,16 @@ p {
 .navbar {
     overflow: hidden;
     background-color: #003333;
+    height: 45px;
+    max-height: 50px;
+    display: block;
 }
 
 .navbar a {
     float: left;
     color: #99ffcc;
     text-align: center;
-    padding: 14px 10px;
+    padding: 16px 10px;
     text-decoration: none;
     font-size: 13px;
 }
@@ -113,16 +118,6 @@ p {
 .navbar a:hover {
     background-color: rgb(16, 243, 167);
     color: #003333;
-}
-
-.wrap {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	text-align: center;
 }
 
 .navbar-container {
