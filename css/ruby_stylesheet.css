@@ -349,5 +349,22 @@ div.description {
     .library, .spiders, .github, .linkdin, .mail, .vroom {
         height: 100px;
     }
+}
 
+
+/*========================================================================
+                      CHONK SCREENS 1400+ BIG BOI HOURS
+=======================================================================*/
+@media screen and (min-width: 1400px) {
+    .library, .spiders, .github, .linkdin {
+        width: 100px;
+    }
+
+    .vroom {
+        width: 212px;
+    }
+
+    .mail {
+        width: 150px;
+    }
 }
