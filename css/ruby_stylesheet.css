@@ -217,13 +217,25 @@ div.description {
 =======================================================================*/
 @media screen and (min-width: 500px) {
 
-    /*.firstname {
-        padding-top: 15%;
+    .firstname {
+        font-size: 70px;
+        padding-top: 10%;
+        padding-left: 10%;
+        padding-right: 65%;
+        padding-bottom: 0px;
+        display: block;
+        height: 5px;
     }
 
     .lastname {
-        padding-top: 5%;
-    }*/
+        font-size: 50px;
+        padding-top: 13%;
+        padding-left: 5%;
+        padding-right: 40%;
+        padding-bottom: 0px;
+        display: block;
+        height: 5px;
+    }
 
     .container {
         padding: 5% 10%;
