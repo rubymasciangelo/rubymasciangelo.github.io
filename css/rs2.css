@@ -7,10 +7,6 @@
     width: 100%;
 }
 
-/* body {
-    background-color: black;
-} */
-
 .heading {
     background: url(../image/banner_card_w.png) top;
     background-size: 120%;
@@ -36,22 +32,13 @@
     }
 }
 
-h1, h3 {
+h1 {
     text-align: center;
     text-shadow: 0 0 10px white, 0 0 60px #12f5f5, 0 0 30px #2af1f1;
     animation-delay: 1s;
     animation: blink 6s alternate-reverse infinite;
     font-size: 3em;
 }
-
-.iconic {
-    /* filter: drop-shadow(0 0 10px white, 0 0 60px #7f00ff, 0 0 30px #7f00ff); */
-    fill: black;
-}
-
-/*h3 {
-    *font-size: 3.5em;
-}*/
 
 @keyframes blink {
     0%, 2%, 4%, 6%, 30%, 32%, 75%, 77%, 100% {opacity: 1}
