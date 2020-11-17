@@ -115,7 +115,7 @@ p {
   }
   
 
-.logobox {
+.logobox, .sitebox {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -123,14 +123,13 @@ p {
     border: 10px solid;
     color: #003333;
     border-radius: 0 20px 0 0;
-
 }
 
 .logobox img {
     width: 300px;
 }
 
-.ss, .pch, .slipper, .bbp, .wolfe {
+.ss, .pch, .slipper, .bbp, .wolfe, .spit, .hale, .lucky, .mbl, .dsktp {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -208,6 +207,44 @@ p {
                 .logo11 { grid-area: 1 / 1 / 2 / 2; }
                 .p4 { grid-area: 2 / 1 / 3 / 2; }
 
+                .spit {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(5, 1fr);
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                    }
+                    
+                    .s1 { grid-area: 1 / 1 / 2 / 2; }
+                    .s2 { grid-area: 2 / 1 / 3 / 2; }
+                    .s3 { grid-area: 3 / 1 / 4 / 2; }
+                    .s4 { grid-area: 4 / 1 / 5 / 2; }
+                    .p6 { grid-area: 5 / 1 / 6 / 2; }
+
+                    .hale {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: repeat(3, 1fr);
+                        grid-column-gap: 0px;
+                        grid-row-gap: 0px;
+                        }
+                        
+                        .h1 { grid-area: 1 / 1 / 2 / 2; }
+                        .h2 { grid-area: 2 / 1 / 3 / 2; }
+                        .p7 { grid-area: 3 / 1 / 4 / 2; }
+
+                        .lucky {
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            grid-template-rows: repeat(3, 1fr);
+                            grid-column-gap: 0px;
+                            grid-row-gap: 0px;
+                            }
+                            
+                            .l1 { grid-area: 1 / 1 / 2 / 2; }
+                            .l2 { grid-area: 2 / 1 / 3 / 2; }
+                            .p8 { grid-area: 3 / 1 / 4 / 2; }
+
 @media screen and (min-width: 800px) {
     .ss{
         display: grid;
@@ -258,7 +295,64 @@ p {
             text-align: left;
             margin: 30px;
         }
+
+        .spit {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr .5fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            }
+            
+        .s1 { grid-area: 1 / 1 / 2 / 2; }
+        .s2 { grid-area: 1 / 2 / 2 / 3; }
+        .s3 { grid-area: 1 / 3 / 2 / 4; }
+        .s4 { grid-area: 2 / 1 / 3 / 4; }
+        .p6 { grid-area: 3 / 1 / 4 / 4; }
+        
+            .hale {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 1fr .5fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                }
+                
+                .h1 { grid-area: 1 / 1 / 2 / 2; }
+                .h2 { grid-area: 1 / 2 / 2 / 3; }
+                .p7 { grid-area: 2 / 1 / 3 / 3; }
+        
+                .lucky {
+                    display: grid;
+                    grid-template-columns: 2fr 1fr;
+                    grid-template-rows: 1fr .5fr;
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                    }
+                    
+                    .l1 { grid-area: 1 / 1 / 2 / 2; }
+                    .l2 { grid-area: 1 / 2 / 2 / 3; }
+                    .p8 { grid-area: 2 / 1 / 3 / 3; }
 }
+
+.mbl {
+    height: 350px;
+    width: 200px;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mbl iframe {
+    margin-left: -204px;
+}
+
+.siteclip {
+    margin: auto;
+}
+
+
 
 @keyframes blink {
     0%, 2%, 4%, 6%, 30%, 32%, 75%, 77%, 100% {opacity: 1}
