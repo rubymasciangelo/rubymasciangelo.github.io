@@ -22,7 +22,7 @@ body {
     overflow: visible;
     background-repeat: no-repeat;
     margin: 0;
-    height: 190px;
+    height: 200px;
     padding: 0;
     color: white;
     font-size: 1.3em;
@@ -80,6 +80,7 @@ p {
     padding: 14px 16px;
     font-size: 17px;
     width: 25%;
+    height: 60px;
     z-index: 10;
   }
   
@@ -91,11 +92,20 @@ p {
       left: 25%;
   }
   
+  /* to counter doubling up issue at breakpoint */
+  /* @media screen and (min-width: 460px) {
+      .tablink {
+          height: 40px;
+      }
+  } */
+
   /* Style the tab content (and add height:100% for full page content) */
   .tabcontent {
+    position: absolute;
+    top: 200px;
+    left: 0;
     color: white;
     display: none;
-    padding: 100px 20px;
     height: 100%;
   }
   
