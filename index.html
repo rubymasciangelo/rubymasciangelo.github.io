@@ -1,148 +1,114 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>Ruby Masciangelo</title>
-        <link rel="stylesheet" href="./css/ruby_stylesheet.css">
+        <link rel="stylesheet" href="./css/rs2.css">
         <link rel="stylesheet" href="">
         <link rel="shortcut icon" href="./image/rmfav.png" type="image/png" width="32" height="32">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- NAVBAR -->
-        <div class="wrap">
-            <div class="navbar-container">
-                <div class="navbar">
-                    <a href="#home">TOP</a>
-                    <a href="#projects">PROJECTS</a>
-                    <a href="#aboutme">ABOUT ME</a>
-                    <a href="#contact">CONTACT</a>
-                    <a href="#resume">RESUME</a>
+        <div class="headingbox">
+            <div class="heading">
+                <div class="film">
+                    <h1>DESIGN</h1>
                 </div>
             </div>
         </div>
-        <!-- END NAVBAR -->
-        <!-- HOME -->
-        <div id="home">
-            <div class="home-container">
-                <!--not sure if this will become and issue-->
-                <div class="text-center">
-                    <span class="firstname">ruby </span><span class="lastname">masciangelo</span>
+        <button class="tablink" onclick="openPage('Logo', this)">LOGO WORK</button>
+        <button class="tablink tl2" onclick="openPage('Site', this)" id="defaultOpen">SITE WORK</button>
+        <div id="Logo" class="tabcontent">
+            <div class="logobox">
+                <div class="ss">
+                    <img src="./image/gd/ssref.png" alt="ssref" class="logo12">
+                    <h4 class="logo12">Client Reference Image</h4>
+                    <img src="./image/gd/sslogo.png" alt="sslogo" class="logo13">
+                    <p class="p5">A liquid mercury type logo based on a client's reference image</p>
+                </div>
+                <div class="pch">
+                    <img src="./image/gd/pch1.png" alt="pch1" class="logo1">
+                    <img src="./image/gd/pch2.png" alt="pch2" class="logo2">
+                    <img src="./image/gd/pch3.png" alt="pch3" class="logo3">
+                    <img src="./image/gd/pch4.png" alt="pch4" class="logo4">
+                    <img src="./image/gd/pch5.png" alt="pch5" class="logo5">
+                    <img src="./image/gd/pch6.png" alt="pch6" class="logo6">
+                    <img src="./image/gd/pch7.png" alt="pch7" class="logo7">
+                    <p class="p1">Three very different design concept requests with multiple options for a custom cabinet
+                                    company in Hawaii
+                    </p>
+                </div>
+                <div class="slipper">
+                    <img src="./image/gd/slipperlogo.jpeg" alt="slipperref" class="logo8">
+                    <h4 class="logo8">Client Reference Image</h4>
+                    <img src="./image/gd/slipperlogo.png" alt="slipper" class="logo9">
+                    <p class="p2">A digital translation of a logo drawn by a client</p>
+                </div>
+                <div class="bbp">
+                    <img src="./image/gd/bbp.png" alt="bbp" class="logo10">
+                    <p class="p3">A beachy-themed logo designed for a website</p>
+                </div>
+                <div class="wolfe">
+                    <img src="./image/gd/wolfes_vector_whitebg.png" alt="wolfes" class="logo11">
+                    <p class="p4">A logo designed for a mechanic business</p>
                 </div>
             </div>
         </div>
-        <!-- END HOME -->
-        <!-- PROJECTS-->
-        <section id="projects">
-            <div class="container">
-                <h1>PROJECTS</h1>
-                <div class="gallery-container">
-                    <div class="responsive">
-                        <div class="gallery">
-                            <a href="https://github.com/rubymasciangelo/SQL-Library-Project/blob/master/library.sql" target="_blank">
-                                <img class="library" src="image/db_icon.png" alt="Library Database" width="100" height="200" />
-                            </a>
-                            <div class="description">My favorite SQL project so far! A functional database I wrote for a system of associated Libraries.</div>
-                        </div>
+        <div id="Site" class="tabcontent">
+            <div class="sitebox">
+                <div class="spit">
+                    <div class="mbl s1">
+                        <iframe class="siteclip" src="https://drive.google.com/file/d/1iHrQxvQmPBcXlmF05NlgkyqWbymwumxt/preview" width="600" height="350"></iframe>
                     </div>
-
-                    <div class="responsive">
-                        <div class="gallery">
-                            <a href="https://github.com/rubymasciangelo/Vroom-Insurance" target="_blank">
-                                <!--this should have its own repository, also should add that it needs to be run on index.cshtml to readme-->
-                                <img class="vroom" src="image/car_icon.png" alt="Vroom Car Insurance" width="100" height="200" />
-                            </a>
-                            <div class="description">An MVC APP that calculates a quote for monthly car insurance based off of user input data.</div>
-                        </div>
+                    <div class="mbl s2">
+                        <iframe class="siteclip" src="https://drive.google.com/file/d/1cAyTy0Tyl1okTMn3xM1AI_DMNGKk0Dy5/preview" width="600" height="350"></iframe>
                     </div>
-
-                    <div class="responsive">
-                        <div class="gallery">
-                            <a href="https://rubymasciangelo.github.io/Spiders-Pizza/" target="_blank">
-                                <img class="spiders" src="image/spiders_icon.png" alt="Spiders Pizza" width="100" height="200" />
-                            </a>
-                            <div class="description">A site that uses React to calculate a receipt based on user selected options at different price points.</div>
-                        </div>
+                    <div class="mbl s3">
+                        <iframe class="siteclip" src="https://drive.google.com/file/d/1sz-CaD_5z7RaR4Udfp0SU7GZWs1R1J_4/preview" width="600" height="350"></iframe>
                     </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- END PROJECTS-->
-        <!-- ABOUT ME -->
-        <section id="aboutme">
-            <div class="container">
-                <h1>ABOUT ME</h1>
-                <p>
-                    I moved to Seattle from Hawaii and I'm currently living near Green Lake.
-                    I always wanted to have a career in the arts and what really drew me to
-                    programming is that it's such a creative industry. I love solving problems
-                    and figuring out better ways to do things. I'm extremely detail oriented
-                    and also able to conceptualize how everything could contribute to the
-                    bigger picture.
-                </p>
-                <p>
-                    I have completed an intensive software development course at the Tech Academy.
-                    I worked on projects implementing and integrating C#, HTML, CSS, JavaScript,
-                    .Net framework, bootstrap and databases in SQL. Most importantly, I became
-                    adept at teaching myself unfamiliar concepts and utilizing research in
-                    problem solving.
-                </p>
-                <p>
-                    I participated in an internship for Prosper IT where I created a code first MVC
-                    with functioning data integration. I was responsible for starting this project
-                    and developing the database connectivity. I also created an accessible and pleasant
-                    user interface and populated the database with seed users to run on startup.
-                </p>
-            </div>
-        </section>
-        <!-- END ABOUT ME -->
-        <!-- CONTACT -->
-        <section id="contact">
-            <div class="container">
-                <h1>CONTACT</h1>
-                <h2>rubymasciangelo@gmail.com</h2>
-
-                <div class="responsive">
-                    <div class="gallery">
-                        <a href="mailto:rubymasciangelo@gmail.com" target="_blank">
-                            <img class="mail" src="image/mail_icon.png" alt="Gmail" width="100" height="200" />
-                        </a>
-                        <div class="description">Email</div>
+                    <div class="dsktp s4">
+                        <iframe class="siteclip" src="https://drive.google.com/file/d/1Hnl0yawEgmOq4tG3bcozlHPlXlnp9j9l/preview" width="640" height="480"></iframe>
                     </div>
+                    <p class="p6">An upscale jewelry site that had a limited production run the week of
+                        Halloween 2020. This site was an overhaul of the Narrative theme by Shopify and featured several
+                         animations that were rendered using HTML, CSS and JavaScript. Ahead of the launch a password page 
+                         displayed a hand-coded countdown in vanilla JavaScript that was time-zone specific to Los Angeles.
+                         The site is currently password protected at <a href="https://spitsnot.com/">SPITSNOT.COM</a>
+                    </p>
                 </div>
 
-                <div class="responsive">
-                    <div class="gallery">
-                        <a href="https://github.com/rubymasciangelo" target="_blank">
-                            <img class="github" src="image/github_icon.png" alt="Github" width="100" height="200" />
-                        </a>
-                        <div class="description">GitHub</div>
+                <div class="hale">
+                    <div class="dsktp h1">
+                        <iframe class="siteclip" src="https://drive.google.com/file/d/1W8rMphJXMnLhrlu8UevOmbZgcHgwaI_E/preview" width="640" height="480"></iframe>
                     </div>
+                    <div class="mbl h2">
+                        <iframe class="siteclip" src="https://drive.google.com/file/d/1BPT0bCYuu3wGGcluKMWtjI9VWz_UMMs8/preview" width="600" height="350"></iframe>
+                    </div>
+                    <p class="p7">A hand-coded ecommerce site for a mobile boutique based out of Waimanalo, Hawaii. Features pure CSS parallax
+                         on the home page for Desktop. This site is hosted through Github and has an ecommerce shop embedded
+                          through Ecwid. The clients wanted a site with high customization that would be compatible with Clover's point of
+                         sale system. This site is live and can be viewed at <a href="https://happyhalehawaii.com/">HappyHaleHawaii.com</a></p>
                 </div>
 
-                <div class="responsive">
-                    <div class="gallery">
-                        <a href="https://www.linkedin.com/in/ruby-masciangelo/" target="_blank">
-                            <img class="linkdin" src="image/linkd_icon.png" alt="LinkedIn" width="100" height="200" />
-                        </a>
-                        <div class="description">LinkedIn</div>
+                <div class="lucky">
+                    <div class="dsktp l1">
+                        <iframe class="siteclip" src="https://drive.google.com/file/d/1wDL_1A6PZj2muWdarFikhZY3u1xqd6hO/preview" width="640" height="480"></iframe>
                     </div>
+                    <div class="mbl l2">
+                        <iframe class="siteclip" src="https://drive.google.com/file/d/1smWZuC_nTiA0f_GOvS9Ibmw8B3v5OPNr/preview" width="600" height="350"></iframe>
+                    </div>
+                    <p class="p8">An ecommerce site for an independent clothing brand in Hawaii with a pacific grunge Y2K feel. 
+                        This site was a massive overhaul of a BigCartel theme. Features included a splash page, mobile parallax
+                        and a multi-slider archive gallery of past looks. This site is no longer live due to brand hiatus.
+                    </p>
                 </div>
-
             </div>
-        </section>
-        <!-- END CONTACT -->
-        <!-- RESUME-->
-        <section id="resume">
-            <div class="container">
-                <h1>RESUME</h1>
-                <iframe src="image/dev_resume.pdf">
-                </iframe>
-            </div>
-        </section>
-        <!-- END RESUME-->
+        </div>
+        
 
     </body>
+    <script type="text/javascript" src="openPage.js"></script>
 </html>
