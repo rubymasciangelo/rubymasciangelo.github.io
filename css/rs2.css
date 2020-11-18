@@ -215,7 +215,7 @@ a {
                 .spit {
                     display: grid;
                     grid-template-columns: 1fr;
-                    grid-template-rows: repeat(5, 1fr);
+                    grid-template-rows: .5fr .5fr .5fr .25fr 1fr;
                     grid-column-gap: 0px;
                     grid-row-gap: 0px;
                     }
@@ -229,7 +229,7 @@ a {
                     .hale {
                         display: grid;
                         grid-template-columns: 1fr;
-                        grid-template-rows: .5fr .75fr 1fr;
+                        grid-template-rows: .25fr .5fr 1fr;
                         grid-column-gap: 0px;
                         grid-row-gap: 0px;
                         }
@@ -241,7 +241,7 @@ a {
                         .lucky {
                             display: grid;
                             grid-template-columns: 1fr;
-                            grid-template-rows: repeat(3, 1fr);
+                            grid-template-rows: .25fr .5fr 1fr;
                             grid-column-gap: 0px;
                             grid-row-gap: 0px;
                             }
