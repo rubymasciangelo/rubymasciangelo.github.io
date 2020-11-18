@@ -260,6 +260,30 @@ p {
     margin-left: -204px;
 }
 
+.mbl.s2 {
+    width: 223px;
+}
+
+.s2 iframe{
+    margin-left: -190px;
+}
+
+.mbl.h2 {
+    width: 233px;
+}
+
+.h2 iframe {
+    margin-left: -185px;
+}
+
+.mbl.l2 {
+    width: 230px;
+}
+
+.l2 iframe {
+    margin-left: -186px;
+}
+
 .dsktp iframe {
     width: 250px;
     height: auto;
