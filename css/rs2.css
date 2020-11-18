@@ -66,6 +66,11 @@ p {
     margin: auto 10px;
 }
 
+a {
+    color: #003333;
+    text-decoration-color: #003333;
+}
+
 /* Style tab links */
 .tablink {
     background-color: #003333;
