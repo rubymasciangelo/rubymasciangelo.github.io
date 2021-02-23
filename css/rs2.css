@@ -120,7 +120,7 @@ footer {
     position: absolute;
     top: 200px;
     left: 0;
-    color: white;
+    color: rgb(240, 240, 240);
     display: none;
     height: 100%;
 }
