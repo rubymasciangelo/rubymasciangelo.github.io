@@ -77,12 +77,15 @@ footer {
     padding-bottom: 5px;
 }
 
-/* Style tab links */
-.tablink {
-    background-color: #003333;
+.tab {
     position: absolute;
     top: 150px;
     left: 0;
+    width: 100%;
+}
+
+.tab button {
+    background-color: #001f1f;
     color: white;
     float: left;
     border: none;
@@ -90,27 +93,36 @@ footer {
     cursor: pointer;
     padding: 14px 16px;
     font-size: 1.1em;
-    width: 25%;
     height: 60px;
-    z-index: 10;
+    width: 25%;
     text-align: center;
-    text-shadow: 0 0 5px white, 0 0 30px #12f5f5, 0 0 10px #2af1f1;
+    text-shadow: 0 0 5px white, 0 0 20px #12f5f55e, 0 0 10px #2af1f1;
     border-radius: 20px 20px 0 0;
     letter-spacing: 2px;
+    z-index: 0;
 }
   
-.tablink:hover {
+.tab button:hover {
     /* background-color: #025858; */
-    text-shadow: 0 0 10px white, 0 0 30px #12f5f5, 0 0 10px #2af1f1;
+    text-shadow: 0px 0px 10px white, 0px 0px 10px #12f5f5, 0px 0px 10px #2af1f1;
+    box-shadow: 0px 0px 30px #138080;
+}
+
+.tab button.active {
+    position: absolute;
+    box-shadow: 0px 0px 30px #138080;
+    background-color: #003333;
+    z-index: 10;
 }
 
 .tl2 {
     left: 25%;
+    position: absolute;
 }
   
 /* to counter doubling up issue at breakpoint */
 @media screen and (min-width: 803px) {
-    .tablink {
+    .tab {
         font-size: 1.4em;
     }
 }
@@ -123,6 +135,7 @@ footer {
     color: rgb(240, 240, 240);
     display: none;
     height: 100%;
+    z-index: 10;
 }
   
 
