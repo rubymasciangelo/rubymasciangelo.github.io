@@ -33,23 +33,30 @@ body {
     flex-direction: column;
 }
 
+h1 {
+    text-align: center;
+    text-shadow: 0 0 10px white, 0 0 60px #12f5f5, 0 0 30px #2af1f1;
+    animation-delay: 1s;
+    animation: blink 6s alternate-reverse infinite;
+    font-size: 1.5em;
+}
+
 @media screen and (min-width: 750px) {
     .heading {
         background-size: 120%;
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 }
 
-h1 {
-    text-align: center;
-    text-shadow: 0 0 10px white, 0 0 60px #12f5f5, 0 0 30px #2af1f1;
-    animation-delay: 1s;
-    animation: blink 6s alternate-reverse infinite;
-    font-size: 2em;
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 2.5em;
+    }
 }
+
 
 /* h3 {
     font-size: 3em;
