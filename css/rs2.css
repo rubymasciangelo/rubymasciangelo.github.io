@@ -37,6 +37,10 @@ body {
     .heading {
         background-size: 120%;
     }
+
+    h1 {
+        font-size: 3em;
+    }
 }
 
 h1 {
@@ -44,7 +48,7 @@ h1 {
     text-shadow: 0 0 10px white, 0 0 60px #12f5f5, 0 0 30px #2af1f1;
     animation-delay: 1s;
     animation: blink 6s alternate-reverse infinite;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 /* h3 {
