@@ -170,7 +170,7 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 30px #138080;
+    box-shadow: inset 0 0 10px #138080;
     border: 10px solid;
     color: #003333;
     border-radius: 0 20px 0 0;
@@ -179,6 +179,36 @@ footer {
 .logobox img {
     width: 300px;
 }
+
+.row {
+    display: flex;
+    line-height: 30vw;
+    text-align: center;
+}
+
+.column {
+    flex: 30%;
+    padding: 0 5%;
+}
+
+img.center {
+    display: inline;
+    vertical-align: middle;
+}
+
+/* .column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    vertical-align: middle;
+
+} */
 
 .ss, .pch, .slipper, .bbp, .wolfe, .spit, .hale, .lucky, .mbl, .dsktp {
     text-align: center;
