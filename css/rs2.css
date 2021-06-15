@@ -518,7 +518,7 @@ img.center {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 100; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -541,7 +541,7 @@ img.center {
     top: 0;
     left: 0;
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     background-color: transparent;
     border: none;
 }
@@ -571,33 +571,30 @@ img.center {
     to {top:0; opacity:1}
 }
 
-@keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
 /* The Close Button */
 .close {
-    color: white;
     float: right;
-    font-size: 28px;
+    color: #aaa;
+    font-size: 35px;
     font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
     text-decoration: none;
     cursor: pointer;
-}
+  }
 
 .modal-header {
+    line-height: 35px;
+    height: 35px;
     padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 16px;
+}
 
 .modal-footer {
     padding: 2px 16px;
