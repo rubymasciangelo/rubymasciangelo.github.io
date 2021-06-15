@@ -20,8 +20,8 @@
             </div>
         </div>
         <div class="tab">
-            <button class="tablink tl1" onclick="openPage(event, 'Logo')">LOGO WORK</button>
-            <button class="tablink tl2" onclick="openPage(event, 'Site')" id="defaultOpen">SITE WORK</button>    
+            <button class="tablink tl1" onclick="openPage(event, 'Logo')" id="defaultOpen">LOGO WORK</button>
+            <button class="tablink tl2" onclick="openPage(event, 'Site')" >SITE WORK</button>    
         </div>
         <div id="Logo" class="tabcontent">
             <div class="logobox">
@@ -44,56 +44,75 @@
                         <img src="./image/gd/slipperlogo.png" alt="slipper" class="center" style="width:100%">
                     </div>
                     <div class="column">
-                        <img src="./image/gd/bbp.png" alt="bbp" class="center" style="width:100%">
+                        <div class="btn-box">
+                            <img src="./image/gd/bbp.png" alt="bbp" class="center" style="width:100%">
+                            <button class="modal-button" href="#myModal1"></button>
+                        </div>
+                        <!-- The Modal -->
+                        <div id="myModal1" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <p>scream</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="column">
-                        <button id="myBtn">
+                        <div class="btn-box">
                             <img src="./image/gd/wolfes_vector_whitebg.png" alt="wolfes" class="center" style="width:100%">
-                        </button>
+                            <button class="modal-button" href="#myModal2"></button>
+                        </div>
+                        <div id="myModal2" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>A logo designed for a mechanic business</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="column">
                     </div>
                     <div class="column">
-                    </div>
-                </div>
-
-
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <p>A logo designed for a mechanic business</p>
                     </div>
                 </div>
 
 <script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.querySelectorAll("button.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var spans = document.getElementsByClassName("close");
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
 }
-
 </script>
 
 
@@ -132,7 +151,7 @@ window.onclick = function(event) {
                 <footer class="foot"> <small class="cr smolcr">&copy; Copyright 2021, Ruby Masciangelo</small> </footer>
             </div>
         </div>
-        <div id="Site" class="tabcontent">
+        {% comment %} <div id="Site" class="tabcontent">
             <div class="sitebox">
                 <div class="spit">
                     <div class="mbl s1">
@@ -182,8 +201,8 @@ window.onclick = function(event) {
                 </div>
                 <footer class="foot"> <small class="cr smolcr">&copy; Copyright 2021, Ruby Masciangelo</small> </footer>
             </div>
-        </div>
+        </div> {% endcomment %}
         
     </body>
-    <script type="text/javascript" src="openPage.js"></script>
+    {% comment %} <script type="text/javascript" src="openPage.js"></script> {% endcomment %}
 </html>
