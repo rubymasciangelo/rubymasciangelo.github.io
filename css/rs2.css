@@ -530,6 +530,8 @@ img.center {
 }
 
 .btn-box {
+    display: inline-block;
+    vertical-align: middle;
     position: relative;
     font: 400 13.3333px Arial;
     padding: 1px 6px;
