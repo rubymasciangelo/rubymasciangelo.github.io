@@ -569,7 +569,7 @@ img.center {
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
+    from {top:30px; opacity:0}
     to {top:0; opacity:1}
 }
 

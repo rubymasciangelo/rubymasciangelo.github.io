@@ -134,7 +134,7 @@
                 </div>
                 <div class="row">
                     <div class="column">
-                        <div class="btn-box">
+                        <div class="btn-box frog">
                             <img src="./image/gd/wolfes_vector_whitebg.png" alt="wolfes" class="center" style="width:100%">
                             <button class="modal-button" href="#myModal1"></button>
                         </div>
@@ -155,15 +155,16 @@
                     </div>
                 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.js"></script>
+
 <script>
 // Get the button that opens the modal
 var btn = document.querySelectorAll("button.modal-button");
-
 // All page modals
 var modals = document.querySelectorAll('.modal');
-
 // Get the <span> element that closes the modal
 var spans = document.getElementsByClassName("close");
+
 
 // When the user clicks the button, open the modal
 for (var i = 0; i < btn.length; i++) {
@@ -230,7 +231,7 @@ window.onclick = function(event) {
                 <footer class="foot"> <small class="cr smolcr">&copy; Copyright 2021, Ruby Masciangelo</small> </footer>
             </div>
         </div>
-        {% comment %} <div id="Site" class="tabcontent">
+        <div id="Site" class="tabcontent">
             <div class="sitebox">
                 <div class="spit">
                     <div class="mbl s1">
@@ -280,8 +281,8 @@ window.onclick = function(event) {
                 </div>
                 <footer class="foot"> <small class="cr smolcr">&copy; Copyright 2021, Ruby Masciangelo</small> </footer>
             </div>
-        </div> {% endcomment %}
+        </div>
         
     </body>
-    {% comment %} <script type="text/javascript" src="openPage.js"></script> {% endcomment %}
+    <script type="text/javascript" src="openPage.js"></script>
 </html>
