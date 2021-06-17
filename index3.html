@@ -171,15 +171,6 @@ for (var i = 0; i < btn.length; i++) {
     e.preventDefault();
     modal = document.querySelector(e.target.getAttribute("href"));
     modal.style.display = "block";
-
-    var cssAnimation = document.createElement('style');
-    cssAnimation.type = 'text/css';
-    var rules = document.createTextNode('@-webkit-keyframes animateout {'+
-    '0% {top:30px; opacity:0}'+
-    '100% {top:0; opacity:1}'+
-    '}');
-    cssAnimation.appendChild(rules);
-    document.querySelectorAll(".modal-content")[0].appendChild(cssAnimation);
  }
 }
 
