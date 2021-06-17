@@ -10,6 +10,7 @@
         <link rel="shortcut icon" href="./image/rmfav.png" type="image/png" width="32" height="32">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     </head>
     <body>
         <div class="headingbox">
@@ -48,9 +49,9 @@
                             <img src="./image/gd/pch1.png" alt="pch1A" class="center" style="width:100%">
                             <button class="modal-button" href="#myModal6"></button>
                         </div>
-                        <div id="myModal6" class="modal">
+                        <div class="modal">
                             <!-- Modal content -->
-                            <div class="modal-content">
+                            <div id="myModal6" class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
                                 </div>
@@ -154,45 +155,84 @@
                     <div class="column">
                     </div>
                 </div>
+ 
+ <div class="modalContainer">
+  <div class="messageWrapper">
+    <div class="message">Message</div>
+  </div>
+</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.js"></script>
+<div class="summaryLinks">
+  <div class="summaryLinksContainer">
+    <button class="modal-button" id="tradeButton">
+      Trade
+    </button>
+    <button class="modal-button" id="transferButton">
+      Transfer
+    </button>
+    <button class="modal-button" id="paybillsButton">
+      Pay Bills
+    </button>
+  </div>
+</div>
 
 <script>
-// Get the button that opens the modal
-var btn = document.querySelectorAll("button.modal-button");
-// All page modals
-var modals = document.querySelectorAll('.modal');
-// Get the <span> element that closes the modal
-var spans = document.getElementsByClassName("close");
+var buttons = document.querySelectorAll(".modal-button");
+var modal = document.querySelector(".modal");
+var lastButton;
 
+TweenMax.set([modal], { autoAlpha: 0 });
 
-// When the user clicks the button, open the modal
-for (var i = 0; i < btn.length; i++) {
- btn[i].onclick = function(e) {
-    e.preventDefault();
-    modal = document.querySelector(e.target.getAttribute("href"));
-    modal.style.display = "block";
- }
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", popUp);
 }
 
-// When the user clicks on <span> (x), close the modal
-for (var i = 0; i < spans.length; i++) {
- spans[i].onclick = function() {
-    for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
-    }
- }
+function popUp() {
+  var newRect = getPosition(modal, this);
+  lastButton = this;
+
+  TweenMax.set(modal, {
+    x: newRect.left,
+    y: newRect.top,
+    width: newRect.width,
+    height: newRect.height
+  });
+
+  var show = new TimelineMax();
+
+  show.to(modal, 0.5, {
+    x: 0,
+    y: 0,
+    width: 800,
+    height: 400,
+    autoAlpha: 1
+  });
+
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
-     for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
-     }
-    }
+
+function getPosition(elem, target) {
+  var targetRect = target.getBoundingClientRect();
+  var elemRect = elem.getBoundingClientRect();
+
+  TweenLite.set(elem, {
+    x: 0,
+    y: 0,
+    width: targetRect.width,
+    height: targetRect.height
+  });
+  var newRect = elem.getBoundingClientRect();
+  TweenLite.set(elem, { width: elemRect.width, height: elemRect.height });
+  return {
+    left: targetRect.left - newRect.left,
+    top: targetRect.top - newRect.top,
+    width: newRect.width,
+    height: newRect.height
+  };
 }
 </script>
+
+
 
 <!--
                 <div class="ss">
