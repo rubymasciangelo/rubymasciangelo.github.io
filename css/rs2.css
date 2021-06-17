@@ -516,8 +516,7 @@ img.center {
 
   /* The Modal (background) */
 .modal {
-    display: flex;
-    /*display: none;*/ /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 100; /* Sit on top */
     padding-top: 100px; /* Location of the box */
@@ -526,8 +525,8 @@ img.center {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    /*background-color: rgb(0,0,0); /* Fallback color */
-   /* background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 .btn-box {
@@ -555,7 +554,6 @@ img.center {
 
 /* Modal Content */
 .modal-content {
-    display: none;
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -605,93 +603,3 @@ img.center {
     background-color: #5cb85c;
     color: white;
 }
-
-
-
-
-
-
-.modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    text-align: center;
-    z-index: 11;
-    cursor: pointer;
-    opacity: 0;
-  }
-  
-  .modal {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .modal-content {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 800px;
-    height: 400px;
-    background-color: #ffffff;
-    position: absolute;
-    z-index: 12;
-    opacity: 0;
-  }
-  
-  .message {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    color: #000;
-    position: relative;
-  }
-  
-  .summaryLinks {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 50px;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  .summaryLinksContainer {
-    display: flex;
-    justify-content: flex-end;
-    width: 90%;
-  }
-  
-  .modal-button {
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 26px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.75);
-    padding: 10px 20px 10px 20px;
-    background: rgba(249, 224, 56, 1);
-    text-decoration: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    width: 115px;
-    transition: all 0.3s;
-  }
-  
-  .btn:hover {
-    background: rgba(0, 0, 0, 1);
-    text-decoration: none;
-    color: #fff;
-  }
